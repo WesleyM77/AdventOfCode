@@ -26,14 +26,17 @@ foreach($contents as $line) {
                 if ($matches[2][$c] > $redLimit) {
                     $gamePossible = false;
                 }
+                break;
             case 'green':
                 if ($matches[2][$c] > $greenLimit) {
                     $gamePossible = false;
                 }
+                break;
             case 'blue':
                 if ($matches[2][$c] > $blueLimit) {
                     $gamePossible = false;
                 }
+                break;
         }
     }
 
